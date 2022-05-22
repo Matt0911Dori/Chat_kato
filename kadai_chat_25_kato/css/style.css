@@ -1,0 +1,129 @@
+body {
+    -ms-touch-action: manipulation;
+        touch-action: manipulation;
+    margin-top: 0;
+    background-color: #222;
+    height: 100vh;
+    margin-right: auto;
+    margin-left: auto;
+    font-family: "Noto Sans JP", sans-serif;
+  }
+  
+  @media (min-width: 64em) {
+    .box {
+      max-width: 400px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
+  .scroll {
+    overflow-y: scroll;
+    background: #8DB4E5;
+    border-bottom: 2px solid #444;
+
+  }
+  
+  .output {
+    overflow: auto;
+    height: calc(100vh - 110px);
+  }
+  
+  .counter {
+    display: none;
+  }
+  
+  .msg__name,
+  .msg__text {
+    -webkit-margin-before: 0 !important;
+            margin-block-start: 0 !important;
+    -webkit-margin-after: 0.5em !important;
+            margin-block-end: 0.5em !important;
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+  
+  .msg__pick-up-name {
+    font-size: 0.7em;
+    color: #fff;
+    margin-right: 1em;
+  }
+  
+  .msg__time {
+    color: white;
+    font-size: 0.7em;
+  }
+  
+  .msg__ip {
+    color: #333;
+    font-size: 1em;
+    margin-left: 1em;
+  }
+  
+  .msg__ip:active {
+    color: #fff;
+  }
+  
+  .msg {
+    margin-bottom: 1em;
+  }
+  
+  .msg__name {
+    color: #fff;
+  }
+  
+  .msg__text {
+    background-color: lightgreen;
+    border-radius: 6px;
+    position: relative;
+    display: inline-block;
+    padding: 7px 10px;
+    color: #333;
+  }
+  
+  .msg__text:before {
+    content: "";
+    position: absolute;
+    top: -17px;
+    left: 16px;
+    margin-left: -15px;
+    border: 10px solid transparent;
+    border-bottom: 10px solid lightgreen;
+  }
+  
+  .input {
+    height: 110px;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  .inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  
+  .user-name,
+  .text {
+    font-size: 1.2em;
+  }
+  
+  .user-name {
+    max-width: 50%;
+  }
+  
+  .send-btn {
+    padding: 8px;
+    margin-left: 0px;
+      background: #61E739;
+      color: #fff;
+      font-size: 1.0rem;
+      font-weight: bold;
+      border: 0;
+     }

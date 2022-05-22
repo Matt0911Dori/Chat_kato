@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Chat App</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="images/chat.png" type="image/x-icon">
+    <link rel="apple-touch-icon" href="images/chat.png" sizes="180x180">
+</head>
+
+<body>
+    <section>
+        <div class="box">
+            <div class="scroll">
+                <div id="js_output" class="output">
+                </div>
+                
+                <p id="js_counter" class="counter" ></p>
+                
+            </div>
+            <div class="input">
+                <div class="inner">
+                    <input type="text" id="js_userName" class="user-name" placeholder="名前">
+                    
+                    <button type="button" id="js_user" class="user-btn"><i class="fas fa-users-cog"></i></button> 
+                    <button type="button" id="js_admin" class="admin-btn"><i class="fas fa-user-shield"></i></button>
+                    <button type="button" id="js_fire" class="fire-btn"><i class="fas fa-fire"></i></button>
+                    
+                </div>
+                <div class="inner">
+                    <textarea id="js_text" class="text" cols="30" rows="3" placeholder="メッセージを入力"></textarea>
+                    <button type="submit" id="js_send" class="send-btn">送信<i class="fas fa-paper-plane"></i></button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <script src="js/main.js" type="module"></script>
+<Script>		
+function removeExample(button) {
+    if (window.confirm('本当に削除しますか？')) {
+        let parent = button.parentNode;
+        parent.remove();
+    }
+}</Script>
+</body>
